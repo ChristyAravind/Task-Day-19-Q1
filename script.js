@@ -48,6 +48,7 @@ function appendtotable(){
             result = foodList.join(", ")
         }else{
             result = alert("Choose min 2 out of 5 in food list")
+            result=foodList.push("undefined");
         }
                 
                 var table=document.getElementById('tab')
