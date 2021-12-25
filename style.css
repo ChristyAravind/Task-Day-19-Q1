@@ -1,29 +1,38 @@
-.flex-container{
+.flex-container {
     display: flex;
-}
-.f2{
- margin-left: 100px;
- width: 70%;
-}
-body{
+    flex-wrap: wrap;
+  }
+  
+  .f1 {
+    width: 30%;
+  }
+  
+  .f2 {
+    margin-left: 5%;
+    width: 65%;
+  }
+  body {
     background-color: #eef0ec;
     color: #456268;
     margin: 50px;
-}
-
-.span{
+  }
+  
+  .span {
     font-weight: lighter;
     font-style: italic;
-}
-
-table{
+  }
+  
+  table {
     overflow-y: scroll;
     overflow-x: scroll;
-    
-}
-
-@media screen and( min-width:567px){
-    .modified{
-        width:100%
+  }
+  
+  @media only screen and (max-width: 950px) {
+    .f1 {
+      width: 100%;
     }
-}
+    .f2 {
+      width: 100%;
+      margin-left: 0px;
+    }
+  }
